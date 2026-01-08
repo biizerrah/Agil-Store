@@ -1,10 +1,10 @@
 import promptSync from 'prompt-sync'
 const prompt = promptSync()
 
-let produtos = []
+export let produtos = []
 let id = 0
 
-function cadastrar_produtos(){
+export function cadastrar_produtos(){
 
     do{
 
@@ -36,6 +36,4 @@ function cadastrar_produtos(){
 
 }
 
-cadastrar_produtos()
 
-console.log("Lista de produtos:", produtos)
