@@ -26,6 +26,8 @@ Abaixo está a descrição da responsabilidade de cada arquivo no projeto:
 | `listar_produtos.js` | Percorre o array de produtos e exibe os itens formatados no terminal. |
 | `atualizar_item.js` | Contém a lógica para buscar um produto por ID e atualizar suas propriedades individualmente. |
 | `deletar.js` | Responsável por remover um item do array com base no ID fornecido. |
+| `buscar_item.js` | Responsável por buscar um item especifico e exibir os seus detalhes. |
+
 
 
 ## 🛠️ Tecnologias Utilizadas
