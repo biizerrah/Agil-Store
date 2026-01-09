@@ -2,18 +2,25 @@ import { produtos } from "./cadastrar.js";
 
 export function listagem(){
 
-    for (let produto of produtos) {
+    if(produtos.length === 0){
 
-        console.table(
-
-            `Id: ${produto.id} | 
-            Produto: ${produto.produto} | 
-            Categoria: ${produto.categoria} |
-            Quantidade: ${produto.quantidade} | 
-            Preço: ${produto.preco}`
+        console.log('Não há produtos a serem listados!')
         
-        )
+    } else{
+            for (let produto of produtos) {
 
+                console.table(
+
+                `Id: ${produto.id} | 
+                Produto: ${produto.produto} | 
+                Categoria: ${produto.categoria} |
+                Quantidade: ${produto.quantidade} | 
+                Preço: ${produto.preco}`
+        
+         )
+
+    } 
     }
+
 
 }
