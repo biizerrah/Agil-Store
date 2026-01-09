@@ -3,6 +3,7 @@ import { cadastrar_produtos } from "./cadastrar.js";
 import { listagem } from "./listar_produtos.js";
 import { atualizar } from './atualizar_item.js';
 import { deletar_item } from './deletar.js';
+import { buscar_produto } from './buscar_item.js';
 
 const prompt = promptSync();
 
@@ -19,7 +20,8 @@ function menu() {
         2. Listar Produtos
         3. Atualizar
         4. Deletar
-        5. Sair
+        5. Buscar Item
+        6. Sair
         `)
 
         const opcao = prompt('Escolha uma opção: ');
@@ -38,9 +40,13 @@ function menu() {
             console.clear()
             deletar_item()
         }else if (opcao === '5'){
-             console.log("Saindo do sistema...");
-              break;   
-        } else {
+            console.clear()
+            buscar_produto()   
+        } else if(opcao == '6'){
+            console.log("Saindo do sistema...");
+            break;   
+        }else{
+
             console.log("Opção inválida. Tente novamente.");
         }
     }
