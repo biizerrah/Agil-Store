@@ -46,7 +46,7 @@ Abaixo está a descrição da responsabilidade de cada arquivo no projeto:
 
 1. **Clone o repositório** (ou baixe os arquivos):
    ```bash
-   git clone <link-do-seu-repositorio>
+   git clone https://github.com/biizerrah/Agil-Store.git
 1. **Rode no terminal o seguinte comando para a istalação das dependências**:
    ```bash
    npm install
